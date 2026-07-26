@@ -1,29 +1,22 @@
 body {
+  margin: 0;
+  padding: 0;
   background-color: #0b0f19;
   background-image:
     linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
   background-size: 20px 20px;
+  font-family: Arial, sans-serif;
 }
+
+/* Titre principal */
 h1 {
-  color: #000000;
+  color: #ffffff;
   text-align: center;
   font-family: grobold, sans-serif;
-  padding-top: 20px;
+  padding-top: 30px;
   font-size: 50px;
-}
-
-input[type="text"] {
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 1px solid #000000;
-  border-radius: 4px;
-}
-
-checkbox {
-  margin: 12px 0;
-  cursor: pointer;
+  margin-bottom: 40px;
 }
 
 /* Conteneur des vidéos */
@@ -32,18 +25,18 @@ checkbox {
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
   max-width: 1200px;
-  margin: 60px auto;
+  margin: 0 auto 50px;
   padding: 20px;
 }
 
-/* Carte d'une vidéo */
+/* Carte vidéo */
 .video-card {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Titre */
+/* Titre au-dessus des vidéos */
 .video-card h3 {
   color: white;
   font-size: 1.4rem;
@@ -52,13 +45,39 @@ checkbox {
   font-weight: 600;
 }
 
-/* Vidéo Vimeo */
+/* Vidéos Vimeo */
 .video-card iframe {
   width: 100%;
   aspect-ratio: 16 / 9;
-  border-radius: 15px;
   border: none;
+  border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* Barre de recherche */
+input[type="text"] {
+  display: block;
+  width: 400px;
+  max-width: 90%;
+  margin: 30px auto 15px;
+  padding: 12px 20px;
+  border: 1px solid #555;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Checkbox */
+label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 18px;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
 }
 
 /* Responsive */
