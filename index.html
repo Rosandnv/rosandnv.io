@@ -10,29 +10,34 @@
   <body>
     <h1>Coffee</h1>
 
+<div class="video-container">
+
+  <div class="video-card">
+    <h3>Présentation du café</h3>
     <iframe
       src="https://player.vimeo.com/video/1212508881"
-      width="640"
-      height="360"
       frameborder="0"
       allow="autoplay; fullscreen; picture-in-picture"
-      allowfullscreen
-    >
+      allowfullscreen>
     </iframe>
+  </div>
 
+  <div class="video-card">
+    <h3>Préparation du café</h3>
     <iframe
       src="https://player.vimeo.com/video/1212507564"
-      width="640"
-      height="360"
       frameborder="0"
       allow="autoplay; fullscreen; picture-in-picture"
-      allowfullscreen
-    >
+      allowfullscreen>
     </iframe>
+  </div>
 
-    <input type="text" id="searchInput" placeholder="Search for coffee..." />
-    <label for="filterCheckbox">
-      <input type="checkbox" id="filterCheckbox" /> Show only available
-    </label>
-  </body>
+</div>
+
+<input type="text" id="searchInput" placeholder="Search for coffee..." />
+
+<label for="filterCheckbox">
+  <input type="checkbox" id="filterCheckbox">
+  Show only available
+</label>
 </html>
