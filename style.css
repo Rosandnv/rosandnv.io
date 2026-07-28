@@ -1,119 +1,38 @@
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #0b0f19;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-  background-size: 20px 20px;
-  font-family: Arial, sans-serif;
-}
-
-/* Titre principal */
-h1 {
-  color: #ffffff;
-  text-align: center;
-  font-family: grobold, sans-serif;
-  padding-top: 30px;
-  font-size: 50px;
-  margin-bottom: 40px;
-}
-
-/* Conteneur des vidéos */
 .video-container {
+  width: min(1200px, 95%);
+  margin: 50px auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
   gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto 50px;
+}
+
+.video-card {
+  background: #161b22;
+  border-radius: 18px;
   padding: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease;
 }
 
-/* Carte vidéo */
-.video-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Titre au-dessus des vidéos */
-.video-card h3 {
-  color: white;
-  font-size: 1.4rem;
-  margin-bottom: 15px;
-  text-align: center;
-  font-weight: 600;
-}
-
-/* Vidéos Vimeo */
-.video-card iframe {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
-}
-
-/* Barre de recherche */
-input[type="text"] {
-  display: block;
-  width: 400px;
-  max-width: 90%;
-  margin: 30px auto 15px;
-  padding: 12px 20px;
-  border: 1px solid #555;
-  border-radius: 8px;
-  font-size: 16px;
-}
-
-/* Checkbox */
-label {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  color: white;
-  font-size: 18px;
-}
-
-input[type="checkbox"] {
-  cursor: pointer;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .video-container {
-    grid-template-columns: 1fr;
-  }
-
-  .video-card h3 {
-    font-size: 1.2rem;
-  }
-}
-
-.video-card {
-  width: min(1000px, 90%);
-  margin: 80px auto;
+.video-card:hover {
+  transform: translateY(-8px);
 }
 
 .video-card h3 {
-  font-size: 2.2rem;
   color: white;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  font-size: 1.6rem;
 }
 
 .video-card p {
-  color: #b7b7b7;
-  font-size: 1.1rem;
-  line-height: 1.7;
-  margin-bottom: 25px;
+  color: #b8b8b8;
+  margin-bottom: 18px;
+  line-height: 1.6;
 }
 
 .video-card iframe {
   width: 100%;
   aspect-ratio: 16 / 9;
   border: none;
-  border-radius: 18px;
-  overflow: hidden;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+  border-radius: 12px;
 }
