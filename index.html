@@ -10,51 +10,53 @@
   <body>
     <h1>Coffee</h1>
 
-<div class="video-container">
+    <div class="video-container">
+      <div class="video-card">
+        <h3>Présentation du café</h3>
+        <iframe
+          src="https://player.vimeo.com/video/1212508881"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
 
-  <div class="video-card">
-    <h3>Présentation du café</h3>
-    <iframe
-      src="https://player.vimeo.com/video/1212508881"
-      frameborder="0"
-      allow="autoplay; fullscreen; picture-in-picture"
-      allowfullscreen>
-    </iframe>
-  </div>
+      <div class="video-card">
+        <h3>Préparation du café</h3>
+        <iframe
+          src="https://player.vimeo.com/video/1212507564"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+    </div>
 
-  <div class="video-card">
-    <h3>Préparation du café</h3>
-    <iframe
-      src="https://player.vimeo.com/video/1212507564"
-      frameborder="0"
-      allow="autoplay; fullscreen; picture-in-picture"
-      allowfullscreen>
-    </iframe>
-  </div>
+    <input type="text" id="searchInput" placeholder="Search for coffee..." />
 
-</div>
+    <label for="filterCheckbox">
+      <input type="checkbox" id="filterCheckbox" />
+      Show only available
+    </label>
 
-<input type="text" id="searchInput" placeholder="Search for coffee..." />
+    <section class="video-card">
+      <h3>Calendrier interactif en JavaScript</h3>
 
-<label for="filterCheckbox">
-  <input type="checkbox" id="filterCheckbox">
-  Show only available
-</label>
+      <p>
+        Développement d'un calendrier moderne réalisé en HTML, CSS et
+        JavaScript. Cette démonstration présente l'interface, les animations et
+        les interactions créées sans framework.
+      </p>
 
-<section class="video-card">
-    <h3>Calendrier interactif en JavaScript</h3>
-
-    <p>
-        Développement d'un calendrier moderne réalisé en HTML, CSS et JavaScript.
-        Cette démonstration présente l'interface, les animations et les interactions
-        créées sans framework.
-    </p>
-
-    <iframe
+      <iframe
         src="https://player.vimeo.com/video/1212508528"
         title="Calendrier interactif"
         allow="autoplay; fullscreen; picture-in-picture"
-        allowfullscreen>
-    </iframe>
-</section>
+        allowfullscreen
+      >
+      </iframe>
+    </section>
+  </body>
 </html>
