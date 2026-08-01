@@ -1,38 +1,68 @@
+body {
+  margin: 0;
+  padding: 40px 20px;
+  background: #0b0f19;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 3rem;
+}
+
 .video-container {
-  width: min(1200px, 95%);
-  margin: 50px auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 40px;
 }
 
 .video-card {
-  background: #161b22;
-  border-radius: 18px;
+  width: 600px;
+  background: #151c2d;
+  border-radius: 20px;
+  overflow: hidden;
   padding: 20px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
-  transition: transform 0.3s ease;
+  box-sizing: border-box;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .video-card:hover {
   transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
 }
 
 .video-card h3 {
-  color: white;
-  margin-bottom: 10px;
-  font-size: 1.6rem;
+  margin: 0 0 10px;
+  font-size: 1.8rem;
 }
 
 .video-card p {
-  color: #b8b8b8;
-  margin-bottom: 18px;
+  color: #c9c9c9;
+  margin-bottom: 20px;
   line-height: 1.6;
 }
 
 .video-card iframe {
   width: 100%;
   aspect-ratio: 16 / 9;
+  display: block;
   border: none;
   border-radius: 12px;
+}
+
+@media (max-width: 700px) {
+  .video-card {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
 }
