@@ -20,9 +20,3 @@
     grid-template-columns: 1fr;
   }
 }
-
-body {
-  margin: 0;
-
-  background-color: #dbeeff; /* Bleu très clair */
-}
